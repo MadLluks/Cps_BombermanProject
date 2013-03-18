@@ -64,10 +64,17 @@ public abstract class AbstractTest {
 	@Test
 	public void testInvariant() {
 		//cond initiale
-		
+		getMoteurJeu().init(5);
+		getMoteurJeu().pasJeu(MoteurJeuService.Commande.RIEN);
 		//operation
-		
+		try {
+			getMoteurJeu().pasJeu(MoteurJeuService.Commande.RIEN);
+		} catch (Exception e) {
+			
+		}
 		//oracle
+		Assert.assertTrue("pasJeu négatif", getMoteurJeu().getPasJeuCourant() >= 0);
+		Assert.assertTrue("pasJeu supérieur à maxPasJeu", getMoteurJeu().getPasJeuCourant() <= getMoteurJeu().getMaxPasJeu());
 	}
 
 }
