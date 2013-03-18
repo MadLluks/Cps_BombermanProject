@@ -19,5 +19,4 @@ public interface MoteurJeuService {
 	// \pre pasJeu(M, cmd) require getPasJeuCourant(M) <= getMaxPasJeu(M)
 	// \post getPasjeuCourrant(pasJeu(M, cmd)) = getPasjeuCourrant(M)+1
 	void pasJeu(Commande cmd);
-
 }
