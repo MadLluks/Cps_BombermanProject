@@ -36,7 +36,7 @@ public abstract class AbstractTest {
 		try {
 			getMoteurJeu().init(10);
 		} catch (Exception e) {
-			System.err.println("Message d'erreur relevé !!");
+			System.err.println("Message d'erreur relevï¿½ !!");
 		}
 	}
 	
@@ -73,8 +73,8 @@ public abstract class AbstractTest {
 			
 		}
 		//oracle
-		Assert.assertTrue("pasJeu négatif", getMoteurJeu().getPasJeuCourant() >= 0);
-		Assert.assertTrue("pasJeu supérieur à maxPasJeu", getMoteurJeu().getPasJeuCourant() <= getMoteurJeu().getMaxPasJeu());
+		Assert.assertTrue("pasJeu nï¿½gatif", getMoteurJeu().getPasJeuCourant() >= 0);
+		Assert.assertTrue("pasJeu supï¿½rieur ï¿½ maxPasJeu", getMoteurJeu().getPasJeuCourant() <= getMoteurJeu().getMaxPasJeu());
 	}
 
 }
