@@ -13,7 +13,7 @@ public interface MoteurJeuService {
 	
 	// \pre init(m) require m>=0
 	// \post getMaxPasJeu(init(m)) = m
-	// \post getPasJeuCourrant(init(m)) = 0;
+	// \post getPasJeuCourrant(init(m)) = 0
 	void init(int m);
 	
 	// \pre pasJeu(M, cmd) require getPasJeuCourant(M) <= getMaxPasJeu(M)

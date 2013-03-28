@@ -13,14 +13,14 @@ public class MoteurJeuContract extends MoteurJeuDecorator {
 		// 0 <= getPasjeuCourrant(M) <= getMaxPasJeu(M)
 		if (!(getDelegates().getPasJeuCourant() >= 0)) {
 			try {
-				throw new Exception("pasJeuCourrant nÃ©gatif");
+				throw new Exception("pasJeuCourrant négatif");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
 		if (!(getDelegates().getPasJeuCourant() <= getDelegates().getMaxPasJeu())) {
 			try {
-				throw new Exception("pasJeuCourrant supÃ©rieur Ã  masPasJeu");
+				throw new Exception("pasJeuCourrant supérieur à  maxPasJeu");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -43,7 +43,7 @@ public class MoteurJeuContract extends MoteurJeuDecorator {
 		// pre cond
 		if (!(m>=0)) {
 			try {
-				throw new Exception("m doit Ãªtre positif");
+				throw new Exception("m doit être positif");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -66,7 +66,7 @@ public class MoteurJeuContract extends MoteurJeuDecorator {
 		// \post getPasJeuCourrant(init(m)) = 0;
 		if (!(super.getPasJeuCourant() == 0)) {
 			try {
-				throw new Exception("pasJeuCourrant non initialisÃ© Ã  0");
+				throw new Exception("pasJeuCourrant non initialisé à  0");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -79,7 +79,7 @@ public class MoteurJeuContract extends MoteurJeuDecorator {
 		// \pre pasJeu(M, cmd) require getPasJeuCourant(M) <= getMaxPasJeu(M)
 		if (!(super.getPasJeuCourant() <= super.getMaxPasJeu())) {
 			try {
-				throw new Exception("tour supplÃ©mentaire interdit");
+				throw new Exception("tour supplémentaire interdit");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -96,7 +96,7 @@ public class MoteurJeuContract extends MoteurJeuDecorator {
 		// \post getPasjeuCourrant(pasJeu(M, cmd)) = getPasjeuCourrant(M)+1
 		if (!(super.getPasJeuCourant() == pasJeuCourrant_atPre +1)) {
 			try {
-				throw new Exception("pasJeuCourrant non incrÃ©mentÃ© de 1");
+				throw new Exception("pasJeuCourrant non incrémenté de 1");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

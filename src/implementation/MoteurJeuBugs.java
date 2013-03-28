@@ -2,11 +2,11 @@ package implementation;
 
 import service.MoteurJeuService;
 
-public class MoteurJeu implements MoteurJeuService {
+public class MoteurJeuBugs implements MoteurJeuService {
 	private int maxPasJeu;
 	private int pasJeuCourant;
 	
-	public MoteurJeu() {
+	public MoteurJeuBugs() {
 	}
 
 	@Override
@@ -28,6 +28,6 @@ public class MoteurJeu implements MoteurJeuService {
 	@Override
 	public void pasJeu(Commande cmd) {
 		// TODO Auto-generated method stub
-		this.pasJeuCourant++;
+		
 	}
 }

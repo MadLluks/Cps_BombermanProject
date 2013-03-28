@@ -1,4 +1,4 @@
-package contract;
+﻿package contract;
 
 import service.BlocService;
 import service.TRESOR;
@@ -19,7 +19,7 @@ public class BlocContract extends BlocDecorator {
 		}
 		// getY(B) >= 0
 		if( !(this.getDelegates().getY() >= 0) ) {
-			try { throw new Exception("coordonnée Y negaive"); }
+			try { throw new Exception("coordonnée Y négative"); }
 			catch (Exception e) { e.printStackTrace(); }
 		}
 	}
