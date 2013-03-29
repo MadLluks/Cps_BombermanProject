@@ -27,7 +27,6 @@ public class MoteurJeu implements MoteurJeuService {
 
 	@Override
 	public void pasJeu(Commande cmd) {
-		// TODO Auto-generated method stub
 		this.pasJeuCourant++;
 	}
 }

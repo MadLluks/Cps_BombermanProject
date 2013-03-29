@@ -3,8 +3,8 @@ package service;
 public interface BlocService {
 
 	// [const]
-	int getX();
-	int getY();
+	//int getX();
+	//int getY();
 	TYPE getType();
 	TRESOR getTresor();
 
@@ -18,6 +18,6 @@ public interface BlocService {
 	// \post getY(init(x, y, type, tresor)) = y
 	// \post getType(init(x, y, type, tresor)) = type
 	// \post getTresor(init(x, y, type, tresor)) = tresor
-	void init(int x, int y, TYPE type, TRESOR tresor);
+	void init(/*int x, int y, */TYPE type, TRESOR tresor);
 	
 }

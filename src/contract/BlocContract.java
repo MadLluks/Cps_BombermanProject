@@ -13,24 +13,24 @@ public class BlocContract extends BlocDecorator {
 	
 	public void checkInvariants() {
 		// getX(B) >= 0
-		if( !(this.getDelegates().getX() >= 0) ) {
+		/*if( !(this.getDelegates().getX() >= 0) ) {
 			try { throw new Exception("coordonnée X négative"); }
 			catch (Exception e) { e.printStackTrace(); }
-		}
+		}*/
 		// getY(B) >= 0
-		if( !(this.getDelegates().getY() >= 0) ) {
+		/*if( !(this.getDelegates().getY() >= 0) ) {
 			try { throw new Exception("coordonnée Y négative"); }
 			catch (Exception e) { e.printStackTrace(); }
-		}
+		}*/
 	}
 	
-	public int getX() {
+	/*public int getX() {
 		return super.getX();
 	}
 	
 	public int gety() {
 		return super.getY();
-	}
+	}*/
 	
 	public TYPE getType() {
 		return super.getType();
@@ -40,20 +40,20 @@ public class BlocContract extends BlocDecorator {
 		return super.getTresor();
 	}
 	
-	public void init(int x, int y, TYPE type, TRESOR tresor) {
+	public void init(/*int x, int y, */TYPE type, TRESOR tresor) {
 		// pre cond
-		if( !( x >= 0) ){
+		/*if( !( x >= 0) ){
 			try { throw new Exception(""); }
 			catch (Exception e) { e.printStackTrace(); }
 		}
 		if( !( y >= 0) ){
 			try { throw new Exception(""); }
 			catch (Exception e) { e.printStackTrace(); }
-		}
+		}*/
 		// pre check
 		checkInvariants();
 		// ope
-		super.init(x, y, type, tresor);
+		super.init(/*x, y, */type, tresor);
 		// post check
 		checkInvariants();
 		// post cond
@@ -61,6 +61,20 @@ public class BlocContract extends BlocDecorator {
 		
 		// \post getY(init(x, y, type, tresor)) = y
 		// \post getType(init(x, y, type, tresor)) = type
+		if (!(super.getType() == type)) {
+			try {
+				throw new Exception("mauvais type enregistré");
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 		// \post getTresor(init(x, y, type, tresor)) = tresor
+		if (!(super.getTresor() == tresor)) {
+			try {
+				throw new Exception("mauvais trésor enregistré");
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 	}
 }

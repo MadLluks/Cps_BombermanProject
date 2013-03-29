@@ -21,8 +21,8 @@ public class MoteurJeuBugs implements MoteurJeuService {
 
 	@Override
 	public void init(int m) {
-		this.maxPasJeu = m;
-		this.pasJeuCourant = 0;
+		this.maxPasJeu = 0;
+		this.pasJeuCourant = m;
 	}
 
 	@Override

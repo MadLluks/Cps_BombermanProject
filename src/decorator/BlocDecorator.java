@@ -16,13 +16,13 @@ public class BlocDecorator implements BlocService{
 		this.delegates = service;
 	}
 	
-	public int getX() {
+	/*public int getX() {
 		return this.delegates.getX();
 	}
 
 	public int getY() {
 		return this.delegates.getY();
-	}
+	}*/
 
 	public TYPE getType() {
 		return this.delegates.getType();
@@ -32,8 +32,8 @@ public class BlocDecorator implements BlocService{
 		return this.delegates.getTresor();
 	}
 
-	public void init(int x, int y, TYPE type, TRESOR tresor) {
-		this.delegates.init(x, y, type, tresor);
+	public void init(/*int x, int y, */TYPE type, TRESOR tresor) {
+		this.delegates.init(/*x, y, */type, tresor);
 	}
 
 }
