@@ -1,15 +1,17 @@
 package test;
 
-import implementation.TerrainBugs;
+import implementation.Terrain;
 
 import org.junit.Before;
+
+import contract.TerrainContract;
 
 public class TerrainTest1 extends TerrainAbstractTest {
 
 	@Override
 	@Before
 	public void beforeTest() {
-		setTerrain(new TerrainBugs());
+		super.setTerrain(new TerrainContract(new Terrain()));
 	}
 
 }
