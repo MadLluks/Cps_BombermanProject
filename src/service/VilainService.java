@@ -1,5 +1,8 @@
 package service;
 
+import enumerations.TYPE;
+import enumerations.TYPE_VILAIN;
+
 public interface VilainService {
 
 	// const

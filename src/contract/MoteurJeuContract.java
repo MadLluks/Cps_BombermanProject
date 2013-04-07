@@ -2,6 +2,7 @@ package contract;
 
 import service.MoteurJeuService;
 import decorator.MoteurJeuDecorator;
+import enumerations.COMMANDE;
 
 public class MoteurJeuContract extends MoteurJeuDecorator {
 	
@@ -74,7 +75,7 @@ public class MoteurJeuContract extends MoteurJeuDecorator {
 	}
 
 	@Override
-	public void pasJeu(Commande cmd) {
+	public void pasJeu(COMMANDE cmd) {
 		// pre cond
 		// \pre pasJeu(M, cmd) require getPasJeuCourant(M) <= getMaxPasJeu(M)
 		if (!(super.getPasJeuCourant() <= super.getMaxPasJeu())) {

@@ -1,10 +1,10 @@
 package contract;
 
 import service.BlocService;
-import service.TRESOR;
-import service.TYPE;
 import service.TerrainService;
 import decorator.TerrainDecorator;
+import enumerations.TRESOR;
+import enumerations.TYPE;
 
 public class TerrainContract extends TerrainDecorator {
 	

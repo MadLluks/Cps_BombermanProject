@@ -1,4 +1,4 @@
-package service;
+package enumerations;
 
 public enum TYPE_VILAIN {
 	BALLON_ORANGE,

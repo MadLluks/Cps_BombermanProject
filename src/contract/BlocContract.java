@@ -1,9 +1,9 @@
 ﻿package contract;
 
 import service.BlocService;
-import service.TRESOR;
-import service.TYPE;
 import decorator.BlocDecorator;
+import enumerations.TRESOR;
+import enumerations.TYPE;
 
 public class BlocContract extends BlocDecorator {
 

@@ -1,8 +1,8 @@
 package decorator;
 
+import enumerations.TRESOR;
+import enumerations.TYPE;
 import service.BlocService;
-import service.TRESOR;
-import service.TYPE;
 
 public class BlocDecorator implements BlocService{
 	

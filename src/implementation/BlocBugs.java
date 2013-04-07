@@ -1,8 +1,8 @@
 package implementation;
 
+import enumerations.TRESOR;
+import enumerations.TYPE;
 import service.BlocService;
-import service.TRESOR;
-import service.TYPE;
 
 public class BlocBugs implements BlocService {
 
@@ -22,7 +22,7 @@ public class BlocBugs implements BlocService {
 	@Override
 	public void init(TYPE type, TRESOR tresor) {
 		this.type = TYPE.VIDE;
-		this.tresor = TRESOR.BOMB_KICK;
+		this.tresor = TRESOR.BOMBUP;
 	}
 
 }

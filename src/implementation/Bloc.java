@@ -1,8 +1,8 @@
 package implementation;
 
+import enumerations.TRESOR;
+import enumerations.TYPE;
 import service.BlocService;
-import service.TRESOR;
-import service.TYPE;
 
 public class Bloc implements BlocService {
 

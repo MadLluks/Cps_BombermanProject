@@ -1,9 +1,10 @@
 package service;
 
+import enumerations.COMMANDE;
+
 public interface MoteurJeuService {
-	
-	enum Commande {RIEN, HAUT, GAUCHE, DROITE, BAS, BOMBE};
-	
+
+	// [Observateurs]
 	// const
 	int getMaxPasJeu();	
 	int getPasJeuCourant();
@@ -11,12 +12,15 @@ public interface MoteurJeuService {
 	// [invariants]
 	// 0 <= getPasjeuCourrant(M) <= getMaxPasJeu(M)
 	
+	// [init]
 	// \pre init(m) require m>=0
 	// \post getMaxPasJeu(init(m)) = m
 	// \post getPasJeuCourrant(init(m)) = 0
 	void init(int m);
+
+	// [operateurs]
 	
 	// \pre pasJeu(M, cmd) require getPasJeuCourant(M) <= getMaxPasJeu(M)
 	// \post getPasjeuCourrant(pasJeu(M, cmd)) = getPasjeuCourrant(M)+1
-	void pasJeu(Commande cmd);
+	void pasJeu(COMMANDE cmd);
 }

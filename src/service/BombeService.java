@@ -2,13 +2,14 @@ package service;
 
 public interface BombeService {
 
-	// [const]
+	// [Observateurs]
+	// const
 	int getNumero();
-	// [const]
+	// const
 	int getX();
-	// [const]
+	// const
 	int getY();
-	// [const]
+	// const
 	int getAmplitude();
 	int getCompteARebours();
 	boolean vaExploser();
@@ -17,6 +18,7 @@ public interface BombeService {
 	// 0 <= getCompteARebours(B) <= 10
 	// vaExploser(B) = (getCompteARebours(B) = 0)
 	
+	// [init]
 	// \pre 3 <= amplitude <= 11
 	// \post getNumero() = num
 	// \post getX() = x
@@ -25,6 +27,8 @@ public interface BombeService {
 	// \post getCompteARebours() = 10
 	void init(int num, int x, int y, int amplitude);
 
+	// [operateurs]
+	
 	// \pre getCompteARebours() != 0 
 	// \post getNumero() = getNumero()@pre
 	// \post getX() = getX()@pre

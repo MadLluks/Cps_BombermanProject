@@ -5,9 +5,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import enumerations.TRESOR;
+import enumerations.TYPE;
+
 import service.BlocService;
-import service.TRESOR;
-import service.TYPE;
 
 public abstract class BlocAbstractTest {
 
@@ -38,9 +39,9 @@ public abstract class BlocAbstractTest {
 		// cond initiale
 		
 		//operation
-		getBloc().init(TYPE.MURBRIQUE, TRESOR.DETONATOR);
+		getBloc().init(TYPE.MURBRIQUE, TRESOR.BOMBUP);
 		//oracle
 		Assert.assertTrue(getBloc().getType() == TYPE.MURBRIQUE);
-		Assert.assertTrue(getBloc().getTresor() == TRESOR.DETONATOR);
+		Assert.assertTrue(getBloc().getTresor() == TRESOR.BOMBUP);
 	}
 }

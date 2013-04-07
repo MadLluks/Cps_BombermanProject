@@ -1,5 +1,6 @@
 package decorator;
 
+import enumerations.COMMANDE;
 import service.MoteurJeuService;
 
 public class MoteurJeuDecorator implements MoteurJeuService {
@@ -30,7 +31,7 @@ public class MoteurJeuDecorator implements MoteurJeuService {
 	}
 
 	@Override
-	public void pasJeu(Commande cmd) {
+	public void pasJeu(COMMANDE cmd) {
 		this.getDelegates().pasJeu(cmd);
 	}
 

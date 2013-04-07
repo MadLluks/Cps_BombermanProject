@@ -1,5 +1,6 @@
 package implementation;
 
+import enumerations.COMMANDE;
 import service.MoteurJeuService;
 
 public class MoteurJeu implements MoteurJeuService {
@@ -26,7 +27,7 @@ public class MoteurJeu implements MoteurJeuService {
 	}
 
 	@Override
-	public void pasJeu(Commande cmd) {
+	public void pasJeu(COMMANDE cmd) {
 		this.pasJeuCourant++;
 	}
 }

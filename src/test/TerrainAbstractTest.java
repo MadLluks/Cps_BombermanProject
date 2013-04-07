@@ -5,8 +5,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import service.TRESOR;
-import service.TYPE;
+import enumerations.TRESOR;
+import enumerations.TYPE;
+
 import service.TerrainService;
 
 public abstract class TerrainAbstractTest {

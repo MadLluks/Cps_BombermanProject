@@ -2,6 +2,7 @@ package service;
 
 public interface TerrainService {
 
+	// [Observateurs]
 	// const
 	public int getNombreColonnes();
 	// const
@@ -12,6 +13,7 @@ public interface TerrainService {
 	
 	// [invariants]
 	
+	// [init]
 	// \pre x >= 1
 	// \pre y >= 1
 	// \post getNombreColonne() = x
@@ -20,5 +22,7 @@ public interface TerrainService {
 	// \post Bloc:getType(getBloc(x, y)) = TYPE.VIDE
 	// \post Bloc:getTresor(getBloc(x, y)) = TRESOR.RIEN
 	public void init(int x, int y);
+
+	// [operateurs]
 	
 }

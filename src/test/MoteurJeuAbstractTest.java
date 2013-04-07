@@ -5,6 +5,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import enumerations.COMMANDE;
+
 import service.MoteurJeuService;
 
 public abstract class MoteurJeuAbstractTest {
@@ -65,10 +67,10 @@ public abstract class MoteurJeuAbstractTest {
 	public void testInvariant() {
 		//cond initiale
 		getMoteurJeu().init(5);
-		getMoteurJeu().pasJeu(MoteurJeuService.Commande.RIEN);
+		getMoteurJeu().pasJeu(COMMANDE.RIEN);
 		//operation
 		try {
-			getMoteurJeu().pasJeu(MoteurJeuService.Commande.RIEN);
+			getMoteurJeu().pasJeu(COMMANDE.RIEN);
 		} catch (Exception e) {
 			
 		}
