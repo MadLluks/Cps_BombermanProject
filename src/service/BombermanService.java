@@ -30,7 +30,7 @@ public interface BombermanService {
 	// \post getY() = y
 	// \post getSante() = SANTE.VIVANT
 	// \post getForceVitale() = 3
-	// \post getNbrBombe() = 0
+	// \post getNbrBombe() = 1
 	// \post getNbrBombeMax() = 1
 	// \post canOverPassWall() = false
 	// \post canOverPassBomb() = false
