@@ -19,7 +19,6 @@ public abstract class VilainAbstractTest {
 	protected void deplacer(TYPE murNord, TYPE murSud, TYPE murOuest, TYPE murEst){
 		
 	}
-	
 	@After
 	public void afterTest() {
 		this.vs =null;
@@ -31,7 +30,7 @@ public abstract class VilainAbstractTest {
 	@Test
 	public void testPostInit() {
 		try {
-				
+			
 		} catch (Exception e) {
 			System.err.println("Message d'erreur relevé");
 		}
